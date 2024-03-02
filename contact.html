@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+
+    <title>Portfolio</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            position: absolute;
+            background-color: rgb(223, 218, 218);
+            height: 100vh;
+            transition: transform 0.3s ease-in;
+
+        }
+
+        .sidebar nav {
+            padding: 45px;
+        }
+
+        .sidebar nav li {
+            list-style: none;
+            font-size: 30px;
+            padding: 33px 0;
+        }
+
+        .sidebar nav li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .main {
+            background-color: white;
+            width: 90vw;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        
+        .contactform{
+            padding: 0 34px;
+            /* padding-top: 144px; */
+              margin-top: 100px;
+              margin-left: 600px;
+              margin-right: 130px;    
+        }
+         .contactform h1{
+            padding: 12px 0;
+        }
+
+
+        .contactform form div{
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .contactform form div input{
+            width: 16vw;
+            border-radius: 5px;
+            margin: 6px 0 0 0;
+            padding: 3px;
+        }
+        #emailHelp{
+            font-size: 11px;
+            color: midnightblue;
+            margin: 0 5px;
+            padding: 3px 0 0 0; 
+        }
+
+        #form-check{
+            flex-direction: row;
+        }
+        #form-check-input{
+            width: 24px;
+            margin: 3px 0;
+        }
+        buttons{
+            margin-top: 34px;
+        }
+        .buttons button{
+            padding: 5px 10px;
+            border-radius: 22px;
+            color: white;
+            background-color: rgb(40, 41, 43);
+            font-weight: bold;
+            font-size: 12px;
+            margin: 10px 0;
+            cursor: pointer;
+            width: 4vw;
+        }
+        .buttons button:hover{
+            background-color: white;
+            color: rgb(73, 74, 74);
+        }
+        .btn-sm{
+            font-size: 14px;
+            padding: 10px 19px;
+            margin: 12px 0;
+        }
+
+        .sidebarGo{
+            transform: translate(-443px , 0px);
+            position: absolute;
+        }
+        .hamburger{
+            position: absolute;
+            cursor: pointer;
+            top: 10px;
+            left: 10px;
+
+        }
+        .ham{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .cross{
+            margin-left: 215px;
+            margin-top: -5px;
+        }
+         @media (max-width: 1615px){
+           /* .devPic{
+            display: none; 
+           }  */
+        /*.sidebar{
+                transform: translate(-443px , 0px);
+                position: absolute;
+            }*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="/inex.html">Home</a></li>
+                    <li><a href="/intro.html">My Intro</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham"src="menu.png" alt="" width="23">
+                <img class="cross" src="close.png" alt="" width="15">
+            </div>
+            <div class="contactform">
+                <h1>Contact Me</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="clientName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="name" required>
+                      </div>
+                    <div class="mb-3">
+                      <label for="clientEmail" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp"required>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="clientPhone" class="form-label">Phone No.</label>
+                      <input type="phone" class="form-control" id="clientPhone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                    <input id="message" required>
+                    </div>
+
+                    <div class="mb-3" id="form-check">
+                      <input type="checkbox" id="form-check-input" id="isClient" required>
+                      <label class="form-check-label" for="isClient">I want you to work on a project with me</label>
+                    </div>
+
+                    <div class="buttons">
+                    <button class="btn-sm" type="submit">Submit</button>
+                </div>
+                  </form>
+            </div>
+        </div>
+</body>
+<script>
+            document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            console.log("Name: " + name);
+            console.log("Email: " + email);
+            console.log("Message: " + message);
+
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+
+        });
+
+</script>
+<script src="script.js"></script>
+
+</html>

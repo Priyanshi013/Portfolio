@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    
+    <title>Portfolio</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            position: absolute;
+            background-color: rgb(223, 218, 218);
+            font-family: 'Fira Sans', sans-serif;
+            height: 100vh;
+            transition: transform 0.3s ease-in;
+
+        }
+
+        .sidebar nav {
+            padding: 45px;
+        }
+
+        .sidebar nav li {
+            list-style: none;
+            font-size: 30px;
+            padding: 33px 0;
+        }
+
+        .sidebar nav li a{
+            text-decoration:none;
+            color: black;
+        }
+
+        .main {
+            background-color: white;
+            width: 90vw;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .infoContainer {
+            background-color:rgb(248, 248, 250);
+            height: 58vh;
+            width: 80vw;
+            margin: 144px auto;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .divInfo{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Source Code Pro',monospace;
+        }
+        .hello{
+            font-size: 65px;
+        }
+        .name{
+            font-size: 55px;
+            font-weight: bold;
+            font-family: 'Fira Sans', sans-serif;
+
+        }
+        .about{
+            font-size: 50px;
+        }
+        .buttons{
+            margin-top: 34px;
+        }
+        .buttons button{
+            padding: 7px 13px;
+            border-radius: 22px;
+            color: white;
+            background-color: rgb(40, 41, 43);
+            font-weight: bold;
+            font-size: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            width: 7vw;
+        }
+        .buttons button:hover{
+            background-color: white;
+            color: rgb(73, 74, 74);
+        }
+        .devPic img{
+            /* width: 381px; */
+            height: 58vh;
+        }
+        .moreabout{
+            font-size: 22px;
+            margin-top: 23px;
+            font-family: 'Fira Sans', sans-serif;
+ 
+        }
+        .blogContainer{
+            margin: 10px 88px;
+        }
+        .blogContainer h1{
+            margin: 23px;
+        }
+        .blogItem{
+            margin: 20px;
+        }
+    
+        .blogItem p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(78, 78, 78);
+        }
+        .sidebarGo{
+            transform: translate(-443px , 0px);
+            position: absolute;
+        }
+        .hamburger{
+            position: absolute;
+            cursor: pointer;
+            top: 10px;
+            left: 10px;
+
+        }
+        .ham{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .cross{
+        margin-left: 215px;
+            margin-top: -5px;
+        }
+        h2{
+            margin: 15px;
+        }
+         @media (max-width: 1615px){
+           /* .devPic{
+            display: none; 
+           }  */
+        /*.sidebar{
+                transform: translate(-443px , 0px);
+                position: absolute;
+            }*/
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="/inex.html">Home</a></li>
+                    <li><a href="/intro.html">My Intro</a></li>
+                    <li><a href="/services.html">Projects</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+
+            <div class="hamburger">
+                <img class="ham"src="menu.png" alt="" width="23">
+                <img class="cross" src="close.png" alt="" width="15">
+            </div>
+            <div class="blogContainer">
+                <h1>Blog by Priyanshi - the legend</h1>
+                <div class="blogItem">
+                    <h2>Learn Java </h2>
+                    <p>Developed by Sun Microsystems in 1995, Java is a highly popular, object-oriented programming language. This platform independent programming language is utilized for Android development, web development, artificial intelligence, cloud applications, and much more.
+                    </p>
+                    <div class="buttons">
+                    <button > Read More</button>
+                </div>
+                    <h3>Reference for learn java</h3>
+                    <p>
+                        >> Mkyong <br>
+                        >> Vogella | Java <br>
+                        >> Java Specialists Newsletter<br>
+                        >> Javarevisited <br>
+                        >> Java Papers | Java<br>
+                        >> Stephen Colebourne’s blog<br>
+                        >> ProgramCreek<br>
+                        >> Bozho’s tech blog<br>
+                        >> jOOQ Blog | Java<br>
+                        >> Petri Kainulainen<br>
+                        </p>
+<wbr>
+                        <h2>Learn HTML </h2>
+                    <p>HTML, which stands for HyperText Markup Language, is the standard markup language used for creating web pages and web applications. It provides the structure and layout of content on the World Wide Web by using a system of tags and attributes.
+                        In HTML, content is enclosed within tags, which define the various elements of a web page such as headings, paragraphs, lists, links, images, forms, tables, and more. Tags are typically enclosed in angle brackets, such as <tagname>, and most come in pairs, with an opening tag and a closing tag (</tagname>), though some tags are self-closing.   
+                    </p>
+                    <div class="buttons">
+                    <button > Read More</button>
+                </div>
+                        <h2>Learn CSS</h2>
+                    <p>CSS stands for Cascading Style Sheets. It's a style sheet language used for describing the presentation of a document written in a markup language like HTML. In simpler terms, CSS defines how HTML elements are displayed on a screen, paper, or in other media. CSS allows web designers to control the layout, colors, fonts, spacing, and other visual aspects of HTML elements. By separating the content of a web page (defined in HTML) from its presentation style (defined in CSS), developers can create consistent, visually appealing websites with ease.
+                    </p>
+                    <div class="buttons">
+                    <button > Read More</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+<script src="script.js"></script>
+
+</html>

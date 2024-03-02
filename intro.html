@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+
+    <title>Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            position: absolute;
+            background-color: rgb(223, 218, 218);
+            height: 100vh;
+            transition: transform 0.3s ease-in;
+        }
+
+        .sidebar nav {
+            padding: 45px;
+        }
+
+        .sidebar nav li {
+            list-style: none;
+            font-size: 30px;
+            padding: 33px 0;
+        }
+
+        .sidebar nav li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .main {
+            background-color: white;
+            width: 90vw;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .infoContainer {
+
+            background-color: rgb(248, 248, 250);
+            height: 58vh;
+            width: 80vw;
+            margin: 144px auto;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .divInfo {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hello {
+            font-size: 65px;
+        }
+
+        .name {
+            font-size: 55px;
+            font-weight: bold;
+            font-family: 'Fira Sans', sans-serif;
+
+        }
+
+        .about {
+            font-size: 50px;
+        }
+
+        .buttons {
+            margin-top: 34px;
+        }
+
+        .buttons button {
+            padding: 9px 14px;
+            border-radius: 22px;
+            color: white;
+            background-color: rgb(40, 41, 43);
+            font-weight: bold;
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background-color: white;
+            color: rgb(249, 250, 250);
+        }
+
+        .devPic img {
+            /* width: 381px; */
+            height: 58vh;
+        }
+
+        .moreabout {
+            font-size: 22px;
+            margin-top: 23px;
+            font-family: 'Fira Sans', sans-serif;
+
+        }
+
+        h1 {
+            margin: 23px;
+        }
+
+        .intro {
+            margin: 10px 88px;
+        }
+
+        .intro p {
+            color: rgb(33, 32, 32);
+            margin: 25px;
+            margin-left: 22px;
+        }
+
+        .intro h2 {
+            margin: 25px;
+        }
+
+        .details {
+            margin: 25px;
+        }
+
+        .skillContainer {
+            padding: 12px;
+            margin: 25px;
+        }
+
+        .skill {
+            width: 265px;
+            height: 10px;
+            background-color: brown;
+            border: 2px solid black;
+        }
+
+        .skillitem {
+            margin: 10px;
+            margin-left: -7px;
+            color: rgb(49, 49, 48);
+            align-items: center;
+            display: flex;
+            font-weight: 600;
+        }
+
+        .hundred {
+            width: 265px;
+        }
+
+        .fifty {
+            width: 125px;
+        }
+
+        .t5 {
+            width: 75px;
+        }
+
+        h4 {
+            color: rgb(25, 26, 27);
+            padding: 12px;
+
+        }
+
+        .gray {
+            color: rgb(32, 32, 32);
+            padding: 12px;
+        }
+
+        .sidebarGo {
+            transform: translate(-443px, 0px);
+            position: absolute;
+        }
+
+        .hamburger {
+            position: absolute;
+            cursor: pointer;
+            top: 10px;
+            left: 10px;
+
+        }
+
+        .ham {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .cross {
+            margin-left: 215px;
+            margin-top: -5px;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 95%;
+            margin: 25px;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #c2c2c2;
+        }
+
+        .detail {
+            margin: 10px;
+            margin-left: 22px;
+        }
+
+        .small {
+            color: rgb(42, 41, 41);
+        }
+        .linked{
+            margin: 30px;
+            width: 30px;
+        }
+        @media (max-width: 1615px) {
+            /* .devPic{
+            display: none; 
+           }  */
+            /*.sidebar{
+                transform: translate(-443px , 0px);
+                position: absolute;
+            }*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="/inex.html">Home</a></li>
+                    <li><a href="/intro.html">My Intro</a></li>
+                    <li><a href="/services.html">Projects</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="menu.png" alt="" width="23">
+                <img class="cross" src="close.png" alt="" width="15">
+            </div>
+            
+            <div class="intro">
+                <h1>Links</h1>
+                <a href="https://www.linkedin.com/in/priyanshi-ray-5b2280217/"><img class="linked" src="social.png" alt=""></a>
+                <a href="https://www.instagram.com/_priyanshi__ray/"><img class="linked" src="instagram.png" alt=""></a>
+                <a href=""><img class="linked" src="facebook.png" alt=""></a>
+
+                <a href=""><img class="linked" src="twitter.png" alt=""></a>
+
+                <!-- <h2>About me</h2>
+                <p class="small">“Highly motivated individual with 7 years of solid computer engineering experience and proven leadership skills seeking the position of SharePoint Administrator at [company name] where I hope to use demonstrated SharePoint expertise, knowledge of SharePoint solutions architecture, and advanced knowledge of Microsoft SQL Server to ensure exceptional technical performance.”</p> -->
+                <h1>Educational Qualification</h1>
+                <!-- <div class="detail">Degree - Bachlor Of Technology</div>
+                <div class="detail">College / University - Sushila Devi Bansal College Of Engineering</div>
+                <div class="detail">Approved By - RGPV</div>
+                <div class="detail">CGPA / Percentage - 8.08cgpa</div>
+                <div class="detail">Passing Year - 2024</div>
+                <div class="detail">Degree - HSSC</div>
+                <div class="detail">College / University - Sandipani School</div>
+                <div class="detail">Approved By - State Board</div>
+                <div class="detail">CGPA / Percentage - 66%</div>
+                <div class="detail">Passing Year - 2020</div>
+                <div class="detail">Degree - SSC </div>
+                <div class="detail">College / University - Sandipani School</div>
+                <div class="detail">Approved By - State Board</div>
+                <div class="detail">CGPA - 80%</div>
+                <div class="detail">Passing Year - 2018</div> -->
+
+                <table>
+                    <tr >
+                        <th>Degree</th>
+                        <th>Collge / School</th>
+                        <th>Approved By </th>
+                        <th>CGPA / Percentage</th>
+                        <th>Passing Year</th>
+                    </tr>
+                    <tr class="detail">
+                        <td>Bachlor Of Technology</td>
+                        <td>Sushila Devi Bansal College Of Engineering</td>
+                        <td>RGPV</td>
+                        <td>8.08cgpa</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr class="detail">
+                        <td>HSSC</td>
+                        <td>Sandipani School</td>
+                        <td>State Board</td>
+                        <td>66%</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr class="detail">
+                        <td>SSC</td>
+                        <td>Sandipani School</td>
+                        <td>State Board</td>
+                        <td>80%</td>
+                        <td>2018</td>
+                    </tr>
+                </table>
+                <h1 class="detail">Technical Skills</h1>
+                <div class="skillContainer">
+                    <div class="skillitem">HTML:<div class="skill"></div>
+                    </div>
+                    <div class="skillitem">CSS:<div class="skill"></div>
+                    </div>
+                    <div class="skillitem">Java:<div class="skill fifty"></div>
+                    </div>
+                    <div class="skillitem">C:<div class="skill"></div>
+                    </div>
+                    <div class="skillitem">OPPS:<div class="skill fifty"></div>
+                    </div>
+                    <div class="skillitem">Basic Programming:<div class="skill"></div>
+                    </div>
+                </div>
+                <h1>Personal Details</h1>
+                <div class="details">Father’s Name - Mr. JAGDISH RAY</div>
+                <div class="details">Date of birth - 13/03/2002 </div>
+                <div class="details">Nationality - Indian </div>
+                <div class="details">Languages known - English & Hindi </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
